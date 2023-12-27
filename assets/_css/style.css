@@ -1,17 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Oswald:wght@400;700&display=swap');
+
 :root {
-  --cor-primaria:
-    --cor-secundaria: --font-family:
+  --cor-cinza: #999999;
+  --cor-preta: #111111;
+  --cor-secundaria: #006341;
+  --cor-verde-primaria: #117050;
+  --fonte-oswald: 'Oswald', sans-serif;
+  --font-open-sans: 'Open sans', sans-serif;
 }
 
 
 /* css geral */
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
-/* css da tag html */
 html {
-  scroll-behavior: smooth;
   font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+
+/* estilo do header */
+header .line {
+  height: 1rem;
+  background-color: var(--cor-verde-primaria);
+}
+
+header .container {
+  max-width: 124rem;
+  margin: auto;
+}
+
+header .header-area {
+  display: flex;
+  height: 10rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .header-left img {
+  width: 6.4rem;
+  height: 6.4rem;
+  display: block;
+}
+
+header .header-right {
+  display: flex;
+  align-items: center;
+}
+
+/* seção do formulário de busca */
+header .header-search form {
+  display: flex;
+  align-items: center;
+}
+
+header .header-search input {
+  outline: 0;
+  width: 100%;
+  max-width: 22.4rem;
+  font-size: 1.6rem;
+  padding: 1rem 1.3rem;
+  border: 0.1rem solid var(--cor-cinza);
+}
+
+header .header-search button {
+  border: 0;
+  padding: 1rem;
+  margin-left: -4rem;
+  background-color: transparent;
+}
+
+header .header-search button img {
+  width: 1.6rem;
+  height: 1.6rem;
+  cursor: pointer;
+}
+
+/* seção estilo do menu */
+header .header-menu {
+  margin-left: 5rem;
+}
+
+header .header-menu img {
+  width: 2.4rem;
+  height: 2.4rem;
+  cursor: pointer;
 }
