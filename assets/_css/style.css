@@ -1,17 +1,17 @@
-:root{
+:root {
   --cor-primaria:
-  --cor-secundaria:
-  --font-family:
-
+    --cor-secundaria: --font-family:
 }
 
 
 /* css geral */
-*{
+* {
   padding: 0;
   margin: 0;
 }
+
 /* css da tag html */
-html{
+html {
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
